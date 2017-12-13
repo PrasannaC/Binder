@@ -1,5 +1,5 @@
 /**
- * Shape class.
+ * Binder class.
  * 
  * @constructor
  * @param {Object} options - The options containing appName
