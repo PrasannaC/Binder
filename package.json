@@ -1,0 +1,38 @@
+{
+  "name": "binder_lib",
+  "version": "1.0.0",
+  "description": "Simple Data Binding Library for JavaScript",
+  "main": "index.js",
+  "dependencies": {
+    "gulp-uglify": "^3.0.0",
+    "pump": "^2.0.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-es2015": "^6.24.1",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^7.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^3.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PrasannaC/Binder.git"
+  },
+  "keywords": [
+    "databinding",
+    "bind",
+    "js"
+  ],
+  "author": "Prasann Choudhari",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PrasannaC/Binder/issues"
+  },
+  "homepage": "https://github.com/PrasannaC/Binder#readme"
+}
