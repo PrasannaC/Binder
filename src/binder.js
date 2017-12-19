@@ -68,7 +68,7 @@ Binder.prototype.createProperty = function(elem, dataBinAttr) {
     this.removeAttrFromRef(dataBinAttr);
 
     if (Object.getOwnPropertyNames(this.binderModelRef).contains(dataBinAttr)) {
-    	throw new new Error("data-bind attribute should be unique.");
+        throw new new Error("data-bind attribute should be unique.");
     }
     var obj = Object.defineProperty(this.binderModelRef, dataBinAttr, {
         configurable: false,
@@ -102,7 +102,7 @@ function __bind_each_element__(elem, index) {
             this.createProperty(elem, dataBinAttr);
         }
     }
-};
+}
 
 
 Array.prototype.contains = function(value) {
