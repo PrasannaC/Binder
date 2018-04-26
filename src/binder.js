@@ -9,7 +9,7 @@
  * 
  * @constructor
  * @param {Object} options - The options containing appName
- *								and data attributes for binding data to DOM.
+ * and data attributes for binding data to DOM.
  */
 
 function Binder(options) {
@@ -27,7 +27,6 @@ Binder.prototype.getElementsWithDataBind = function() {
 Binder.prototype.setParentElement = function() {
     if (this.options.appName == undefined) {
         this.parentElem = document.getElementsByTagName('body')[0];
-        this.binderModelRef = binderModel;
     } else {
         var elems = document.querySelectorAll(`[appName="${this.options.appName}"]`);
         if (elems.length == 0)
@@ -35,9 +34,8 @@ Binder.prototype.setParentElement = function() {
         if (elems.length > 1)
             throw `Multiple elements with appName ${this.options.appName} exist. Option appName must be unique`;
         this.parentElem = elems[0];
-
-        this.binderModelRef = this.options.data;
     }
+    this.binderModelRef = this.options.data;
 };
 
 Binder.prototype.bind = function() {
